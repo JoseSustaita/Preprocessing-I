@@ -175,6 +175,7 @@ h2 p {
 table {
   font-size: 20px;
   margin: 20px;
+  width: 96%;
 }
 table th {
   text-align: left;
@@ -202,11 +203,22 @@ table td {
 }
 @media (max-width: 500px) {
   .name {
-    padding: 20%;
-
+    width: 238%;
   }
   .rowOne {
     display: flex;
     flex-direction: column;
+  }
+  .listen {
+    width: 237%;
+  }
+  .workHistory {
+    margin-top: 30px;
+  }
+  .info {
+    margin-top: 30px;
+  }
+  table {
+    width: 240%;
   }
 }
