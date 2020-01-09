@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -174,7 +174,7 @@ h2 p {
 }
 table {
   font-size: 20px;
-  margin: 20px
+  margin: 20px;
 }
 table th {
   text-align: left;
@@ -199,4 +199,10 @@ table td {
 .info {
   margin: 10px;
   font-size: 20px;
+}
+@media (max-width: 500px) {
+  .name {
+    padding: 20%;
+    
+  }
 }

@@ -4,48 +4,129 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -55,89 +136,90 @@ table {
 
 /* Mixins */
 .spacing {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-
-
-
-
-
-
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 img {
-	max-width: 100%;
-	height: 500px;
+  max-width: 100%;
+  height: 500px;
 }
-nav{
-	.spacing()
-	justify-content: center;
-	margin: 3%;
-	padding: 1%;
-	
-	a{
-		margin: 2%;
-		font-size: 20px;
-	}
+nav {
+  .spacing() justify-content: center;
+  margin: 3%;
+  padding: 1%;
+
+  a {
+    margin: 2%;
+    font-size: 20px;
+  }
 }
 h1 {
-	font-size: 70px;
+  font-size: 70px;
 }
 button {
-	border: @simple-border;
+  border: @simple-border;
 }
 .name {
-	margin: 20px;
+  margin: 20px;
 }
 h2 {
-	font-size: 40px;
+  font-size: 40px;
 
-p{
-	font-size: 20px;
+  p {
+    font-size: 20px;
+  }
 }
-
-}
-.rowOne{
-	.spacing()
+.rowOne {
+  .spacing();
 }
 .listen {
-	width: 50%;
-	margin: 20px;
+  width: 50%;
+  margin: 20px;
 }
 table {
-	font-size: 20px;
-	margin: 20px;
-	th {
-		text-align: left;
-		padding: 4px 30px 4px 8px;
-		color: white;
-		background-color: gray;
-	}
-	td {
-		border: @simple-border;
-		padding: px 8px;
-	}
+  font-size: 20px;
+  margin: 20px;
+  th {
+    text-align: left;
+    padding: 4px 30px 4px 8px;
+    color: white;
+    background-color: gray;
+  }
+  td {
+    border: @simple-border;
+    padding: px 8px;
+  }
 }
 .line {
-	border: @simple-border;
-    width: 250%;
-    padding: 15px;
+  border: @simple-border;
+  width: 250%;
+  padding: 15px;
 }
 .name {
-	border: solid 1px white;
-	background-color:rgb(229, 233, 237);
-	padding: 45px;
+  border: solid 1px white;
+  background-color: rgb(229, 233, 237);
+  padding: 45px;
 }
 .info {
-	margin: 10px;
-	font-size: 20px;
+  margin: 10px;
+  font-size: 20px;
 }
 /* For mobile phones: */
-@media screen and (max-width: 500px)
+@media (max-width: 500px) {
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  padding: 20%;
+}
+}
