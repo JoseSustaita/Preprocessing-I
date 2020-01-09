@@ -203,6 +203,10 @@ table td {
 @media (max-width: 500px) {
   .name {
     padding: 20%;
-    
+
+  }
+  .rowOne {
+    display: flex;
+    flex-direction: column;
   }
 }
